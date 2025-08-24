@@ -88,8 +88,6 @@ export default function Home() {
     fetch_events();
   }, []);
 
-  console.log(searchInput);
-
   return (
     <div>
       <div className="search p-6 max-w-[400px] m-auto space-y-3">

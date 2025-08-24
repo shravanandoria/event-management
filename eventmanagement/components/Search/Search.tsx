@@ -1,7 +1,14 @@
 import React from "react";
 
+interface SearchState {
+  name: string;
+  date: string;
+  location: string;
+  sort: string;
+}
+
 interface SearchComponent {
-  setSearchInput: (param: any) => void;
+  setSearchInput: React.Dispatch<React.SetStateAction<SearchState>>;
   searchInput: string;
 }
 
