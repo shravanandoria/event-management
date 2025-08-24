@@ -1,0 +1,29 @@
+{
+  "name": "my-ts-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "initdb": "ts-node src/scripts/initDb.ts"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^x.x.x",
+    "@types/pg": "^8.15.5",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^x.x.x"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
