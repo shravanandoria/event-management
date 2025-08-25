@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "*", // Allow all origins (you can restrict to frontend domain if needed)
+    origin: "*", 
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -29,3 +29,4 @@ app.use("/api", userRoutes);
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => console.log("App is running on port ", PORT));
+
