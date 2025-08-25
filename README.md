@@ -29,7 +29,14 @@
     -  Get registered users for event -> GET -> https://api.volunteeryatraa.online/api/events/:id/users
     -  Cancel user registration -> DELETE -> https://api.volunteeryatraa.online/api/users/:id
  
-DEPLOYMENT
+🌎 DEPLOYMENT
 -  The backend is deployed on an AWS EC2 instance with PM2 + Nginx reverse proxy
 -  The frontend is deployed on Vercel
+
+📌 KEYPOINTS
+-    User cannot create, edit or delete any event without logging in
+-    Every time a user searches for any event, the search is debounced and cached on the user's end using all parameters, i.e. name, location, and date
+-    Errors are handled gracefully from the backend
+-    secured domain (https://api.volunteeryatraa.online) is used to connect to the backend service
+
 
