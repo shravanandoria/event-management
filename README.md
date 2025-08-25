@@ -37,6 +37,7 @@
 -    User cannot create, edit or delete any event without logging in
 -    Every time a user searches for any event, the search is debounced and cached on the user's end using all parameters, i.e. name, location, and date
 -    Errors are handled gracefully from the backend
--    secured domain (https://api.volunteeryatraa.online) is used to connect to the backend service
+-    Secured domain (https://api.volunteeryatraa.online) is used to connect to the backend service
+-    Used JWT authentication with token and user data stored using localStorage 
 
 
