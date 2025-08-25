@@ -9,7 +9,13 @@ import authRoutes from "./routes/authRoutes";
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Allow all origins (you can restrict to frontend domain if needed)
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.get("/", async (req, res) => {
   const result = await pool.query("SELECT current_database()");
